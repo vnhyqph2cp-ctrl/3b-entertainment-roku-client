@@ -1,6 +1,33 @@
-<Group
-    id="host"
-    width="960"
-    height="720"
-    translation="[280,0]"
-    visible="true" />
+<?xml version="1.0" encoding="utf-8"?>
+<component name="MainScene" extends="Scene">
+  <interface>
+    <field id="m3uUrl" type="string" />
+  </interface>
+
+  <children>
+    <Rectangle id="bg" width="1280" height="720" color="0x000000FF" />
+
+    <Group id="root" translation="[40,40]">
+      <Label
+        id="brand"
+        text="3B ENTERTAINMENT"
+        translation="[0,0]"
+        width="1200"
+        height="40"
+        color="0xFFD700FF" />
+
+      <Group id="layout" translation="[0,70]">
+        <MarkupList
+          id="nav"
+          itemSize="[260,56]"
+          translation="[0,0]"
+          width="260"
+          height="610" />
+
+        <Group id="contentHost" translation="[300,0]" />
+      </Group>
+    </Group>
+  </children>
+
+  <script type="text/brightscript" uri="pkg:/components/MainScene.brs" />
+</component>
