@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component name="M3ULoaderTask" extends="Task">
+  <interface>
+    <field id="url" type="string" />
+    <field id="items" type="assocarray" />
+    <field id="error" type="string" />
+  </interface>
+  <script type="text/brightscript" uri="pkg:/components/M3ULoaderTask.brs" />
+</component>
