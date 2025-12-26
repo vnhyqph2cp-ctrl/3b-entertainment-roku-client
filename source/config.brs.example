@@ -1,0 +1,8 @@
+' config.brs.example - TEMPLATE FILE
+' Copy this to config.brs and add your real M3U URL
+' config.brs is gitignored and will NOT be committed
+
+function GetM3UUrl() as string
+    ' REPLACE THIS URL WITH YOUR REAL M3U PLAYLIST URL:
+    return "https://example.com/your-playlist.m3u"
+end function
