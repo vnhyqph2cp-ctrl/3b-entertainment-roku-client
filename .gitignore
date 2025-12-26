@@ -1,0 +1,31 @@
+# Roku deployment packages
+*.zip
+*.pkg
+
+# Roku device screenshots
+*.jpg
+*.png
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Backup files
+*.bak
+*.backup
+*_backup/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
