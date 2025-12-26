@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component name="MovieView" extends="Group">
+  <children>
+    <Label text="Movies (placeholder)" translation="[0,0]" color="0xFFFFFFFF" />
+  </children>
+  <script type="text/brightscript" uri="pkg:/components/MovieView.brs" />
+</component>
