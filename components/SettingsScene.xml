@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component name="SettingsScene" extends="Group">
+  <children>
+    <Label text="Settings" translation="[0,0]" color="0xFFFFFFFF" />
+    <Label text="Stream Quality: Stable (recommended)" translation="[0,50]" color="0xAAAAAAFF" />
+  </children>
+  <script type="text/brightscript" uri="pkg:/components/SettingsScene.brs" />
+</component>
