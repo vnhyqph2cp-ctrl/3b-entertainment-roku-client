@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component name="GuideView" extends="Group">
+  <children>
+    <Label text="Guide (placeholder)" translation="[0,0]" color="0xFFFFFFFF" />
+  </children>
+  <script type="text/brightscript" uri="pkg:/components/GuideView.brs" />
+</component>
