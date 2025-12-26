@@ -32,7 +32,6 @@ git checkout v7-baseline-working
 │   ├── ChannelsView.xml
 │   ├── MainScene.brs
 │   └── MainScene.xml
-├── 3benter.zip         # Additional resources
 └── manifest            # Roku channel configuration
 ```
 
