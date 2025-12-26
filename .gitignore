@@ -29,3 +29,11 @@ Desktop.ini
 # Temporary files
 *.tmp
 *.temp
+
+
+# Secret M3U URL config - NEVER COMMIT
+source/config.brs
+config.brs
+*.env
+.env
+.env.local
