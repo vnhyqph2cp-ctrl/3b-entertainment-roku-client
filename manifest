@@ -1,0 +1,7 @@
+title=3B Entertainment
+major_version=1
+minor_version=0
+build_version=1
+
+ui_resolutions=hd
+main_scene=components/MainScene

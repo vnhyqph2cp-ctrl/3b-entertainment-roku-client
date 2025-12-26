@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="ChannelsView" extends="Group">
+
+    <children>
+
+        <!-- Forced background so view is never invisible -->
+        <Rectangle
+            width="960"
+            height="720"
+            color="0x202020FF" />
+
+        <!-- Proof-of-life label -->
+        <Label
+            text="LIVE TV VIEW LOADED"
+            translation="[40,40]"
+            color="0xFFFFFFFF"
+            width="500" />
+
+    </children>
+
+</component>
