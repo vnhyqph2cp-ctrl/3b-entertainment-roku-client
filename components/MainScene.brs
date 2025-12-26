@@ -5,7 +5,7 @@ sub init()
     ' Put your M3U URL here (or set m3uUrl from elsewhere later)
     if m.top.m3uUrl = invalid or m.top.m3uUrl = "" then
         ' EXAMPLE PLACEHOLDER (change this to your real playlist URL)
-        m.top.m3uUrl = "https://example.com/playlist.m3u"
+                m.top.m3uUrl = GetM3UUrl()  ' From source/config.brs
     end if
 
     buildNav()
