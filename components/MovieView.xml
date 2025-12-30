@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component name="MovieView" extends="Group">
+  <interface>
+    <field id="tmdbApiKey" type="string" />
+  </interface>
+  
   <children>
-    <Label text="Movies (placeholder)" translation="[0,0]" color="0xFFFFFFFF" />
+    <!-- Background -->
+    <Rectangle
+      width="960"
+      height="720"
+      color="0x202020FF" />
+    
+    <!-- Title -->
+    <Label
+      id="title"
+      text="Popular Movies"
+      translation="[20,20]"
+      color="0xFFD700FF"
+      font="font:LargeBoldSystemFont" />
+    
+    <!-- Status Label -->
+    <Label
+      id="statusLabel"
+      text="Loading movies..."
+      translation="[20,70]"
+      color="0xAAAAAAFF"
+      font="font:MediumSystemFont" />
+    
+    <!-- Movie Grid -->
+    <PosterGrid
+      id="movieGrid"
+      translation="[20,120]"
+      itemSize="[200,300]"
+      numColumns="4"
+      numRows="2"
+      itemSpacing="[20,20]"
+      visible="false" />
   </children>
+  
   <script type="text/brightscript" uri="pkg:/components/MovieView.brs" />
 </component>
