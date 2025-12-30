@@ -2,30 +2,30 @@ sub init()
     m.statusLabel = m.top.findNode("statusLabel")
     m.movieGrid = m.top.findNode("movieGrid")
     
-    ' Observe API key field
-    m.top.observeField("tmdbApiKey", "onApiKeySet")
+    ' Observe backend URL field
+    m.top.observeField("tmdbBackendUrl", "onBackendUrlSet")
 end sub
 
-sub onApiKeySet()
-    apiKey = m.top.tmdbApiKey
-    if apiKey <> invalid and apiKey <> "" and apiKey <> "YOUR_TMDB_API_KEY_HERE"
+sub onBackendUrlSet()
+    backendUrl = m.top.tmdbBackendUrl
+    if backendUrl <> invalid and backendUrl <> ""
         loadMovies()
     else
-        m.statusLabel.text = "TMDB API key not configured. Please set up config.brs"
+        m.statusLabel.text = "TMDB backend URL not configured. Please set up config.brs"
     end if
 end sub
 
 sub loadMovies()
     m.statusLabel.text = "Fetching popular movies from TMDB..."
     
-    ' Get API key
-    apiKey = m.top.tmdbApiKey
+    ' Get backend URL
+    backendUrl = m.top.tmdbBackendUrl
     
-    ' Fetch popular movies from TMDB
-    moviesData = TMDBGetPopularMovies(apiKey, 1)
+    ' Fetch popular movies from TMDB backend
+    moviesData = TMDBGetPopularMovies(backendUrl, 1)
     
     if moviesData = invalid or moviesData.results = invalid
-        m.statusLabel.text = "Failed to load movies. Check your API key."
+        m.statusLabel.text = "Failed to load movies. Check backend connection."
         return
     end if
     

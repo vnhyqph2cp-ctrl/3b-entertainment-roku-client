@@ -21,13 +21,15 @@ function HttpGet(url as string, timeoutMs = 8000 as integer) as string
     return rsp
 end function
 
-' TMDB API helper functions
-function TMDBGetPopularMovies(apiKey as string, page = 1 as integer) as object
-    if apiKey = invalid or apiKey = "" or apiKey = "YOUR_TMDB_API_KEY_HERE" then
+' TMDB Backend helper functions
+' Uses a backend service to fetch TMDB data (keeps API key secure on server)
+function TMDBGetPopularMovies(backendUrl as string, page = 1 as integer) as object
+    if backendUrl = invalid or backendUrl = "" then
         return invalid
     end if
     
-    url = "https://api.themoviedb.org/3/movie/popular?api_key=" + apiKey + "&page=" + page.ToStr()
+    ' Call backend service endpoint for popular movies
+    url = backendUrl + "/popular?page=" + page.ToStr()
     response = HttpGet(url)
     
     if response = "" then return invalid

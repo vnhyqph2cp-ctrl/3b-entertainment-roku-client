@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component name="MovieView" extends="Group">
   <interface>
-    <field id="tmdbApiKey" type="string" />
+    <field id="tmdbBackendUrl" type="string" />
   </interface>
   
   <children>
