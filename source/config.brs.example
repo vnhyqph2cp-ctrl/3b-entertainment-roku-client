@@ -1,8 +1,14 @@
 ' config.brs.example - TEMPLATE FILE
-' Copy this to config.brs and add your real M3U URL
+' Copy this to config.brs and add your real M3U URL and TMDB API key
 ' config.brs is gitignored and will NOT be committed
 
 function GetM3UUrl() as string
     ' REPLACE THIS URL WITH YOUR REAL M3U PLAYLIST URL:
     return "https://example.com/your-playlist.m3u"
+end function
+
+function GetTMDBApiKey() as string
+    ' REPLACE THIS WITH YOUR REAL TMDB API KEY:
+    ' Get your free API key from https://www.themoviedb.org/settings/api
+    return "YOUR_TMDB_API_KEY_HERE"
 end function
