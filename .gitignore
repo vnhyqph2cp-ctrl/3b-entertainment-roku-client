@@ -30,6 +30,8 @@ Desktop.ini
 *.tmp
 *.temp
 
+# Workflow artifacts
+unclaimed.json
 
 # Secret M3U URL config - NEVER COMMIT
 source/config.brs
