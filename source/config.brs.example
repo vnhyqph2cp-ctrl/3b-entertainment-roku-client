@@ -1,8 +1,14 @@
 ' config.brs.example - TEMPLATE FILE
-' Copy this to config.brs and add your real M3U URL
+' Copy this to config.brs and add your real M3U URL and TMDB backend URL
 ' config.brs is gitignored and will NOT be committed
 
 function GetM3UUrl() as string
     ' REPLACE THIS URL WITH YOUR REAL M3U PLAYLIST URL:
     return "https://example.com/your-playlist.m3u"
+end function
+
+function GetTMDBBackendUrl() as string
+    ' TMDB backend service URL (API key is stored securely on the backend)
+    ' Default: https://3-b-tmdb-api--3bmedia.replit.app
+    return "https://3-b-tmdb-api--3bmedia.replit.app"
 end function

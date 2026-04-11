@@ -7,6 +7,9 @@ sub init()
         ' EXAMPLE PLACEHOLDER (change this to your real playlist URL)
                 m.top.m3uUrl = GetM3UUrl()  ' From source/config.brs
     end if
+    
+    ' Get TMDB backend URL from config
+    m.tmdbBackendUrl = GetTMDBBackendUrl()
 
     buildNav()
     m.nav.observeField("itemSelected", "onNavSelected")
@@ -64,6 +67,7 @@ sub showView(viewId as string)
         view = CreateObject("roSGNode", "GuideView")
     else if viewId = "movies"
         view = CreateObject("roSGNode", "MovieView")
+        view.tmdbBackendUrl = m.tmdbBackendUrl
     else if viewId = "settings"
         view = CreateObject("roSGNode", "SettingsScene")
     else
